@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Area and perimeter of Shapes</title>
+  </head>
+  <body>
+    <script>
+      var shape = parseInt(
+        prompt("Enter 1 for Square and 2 for Rectange and 3 for Circle")
+      );
+      if (shape == 1) {
+        let ap = prompt(
+          "Enter Area to calculate area and perimeter to calculate perimeter"
+        ).toUpperCase();
+        if (ap == "AREA") {
+          var a = parseInt(prompt("Enter side of square"));
+          area = a * a;
+          document.write(`Area of square is ${area}`);
+        } else if (ap == "PERIMETER") {
+          var a = parseInt(prompt("Enter side of square"));
+          peri = 4 * a;
+          document.write(`Area of square is ${peri}`);
+        } else {
+          document.write("You have enter unknown word. Check your spelling");
+        }
+      } else if (shape == 2) {
+        let ap = prompt(
+          "Enter Area to calculate area and perimeter to calculate perimeter"
+        ).toUpperCase();
+        if (ap == "AREA") {
+          var a = parseInt(prompt("Enter Height of Rectangle"));
+          var b = parseInt(prompt("Enter Breadth of Rectangle"));
+          area = a * b;
+          document.write(`Area of Rectangle is ${area}`);
+        } else if (ap == "PERIMETER") {
+          var a = parseInt(prompt("Enter side of Rectangle"));
+          var b = parseInt(prompt("Enter Breadth of Rectangle"));
+          peri = 4 * a;
+          document.write(`Area of Rectangle is ${peri}`);
+        } else {
+          document.write("You have enter unknown word. Check your spelling");
+        }
+      } else if (shape == 3) {
+        let ap = prompt(
+          "Enter Area to calculate area and perimeter to calculate perimeter"
+        ).toUpperCase();
+        if (ap == "AREA") {
+          var r = parseInt(prompt("Enter side of Circle"));
+          area = 3.14 * (r * r);
+          document.write(`Area of Circle is ${area}`);
+        } else if (ap == "PERIMETER") {
+          var r = parseInt(prompt("Enter side of Circle"));
+          peri = 2 * 3.14 * r;
+          document.write(`Area of Circle is ${peri}`);
+        } else {
+          document.write("You have enter unknown word. Check your spelling");
+        }
+      } else {
+        document.write("You have entered unknown value");
+      }
+    </script>
+  </body>
+</html>
