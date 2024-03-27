@@ -10,7 +10,7 @@
       var n = parseInt(prompt("Enter no of stars"));
       for (i = 1; i <= n; i++) {
         for (j = 1; j <= n; j++) {
-          if (i == 1 || j == n || i == j) {
+          if (i == 1 || i == n || j == 1 || j == n) {
             document.write("*");
           } else {
             document.write("&nbsp&nbsp");
